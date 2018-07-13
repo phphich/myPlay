@@ -1,0 +1,9 @@
+@(selectList:List[Product])
+<html>
+    <body>
+        <h1>You are selected!!! </h1>
+        @for((product, index)<-selectList.zipWithIndex){
+            @product.getId : @product.getName : @product.getPrice <br>
+        }
+    </body>
+</html>
